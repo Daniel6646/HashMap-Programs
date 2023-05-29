@@ -1,0 +1,51 @@
+package HashMapPrograms;
+
+import java.util.HashMap;
+
+public class NestedHashMap {
+	
+	public static void main(String[] args) {
+	
+		HashMap<String, String> gen = new HashMap<String,String>();
+		HashMap<String, HashMap<String, String>> prc = new HashMap<String, HashMap<String,String>>();
+		
+		gen = new HashMap<String, String>();
+		gen.put("Name", "Daniel");
+		prc.put("1", gen);
+		
+		gen = new HashMap<String, String>();
+		gen.put("Name", "Xander");
+		prc.put("2", gen);
+		
+		gen = new HashMap<String, String>();
+		gen.put("Name", "Hades");
+		prc.put("3", gen);
+		
+		gen = new HashMap<String, String>();
+		gen.put("Name", "Hercules");
+		prc.put("4", gen);
+		
+		gen = new HashMap<String, String>();
+		gen.put("Name", "Xor");
+		prc.put("4", gen);
+		
+		gen = new HashMap<String, String>();
+		gen.put("Name", "Zues");
+		prc.put("5", gen);
+		
+		gen = new HashMap<String, String>();
+		gen.put("Name", "Thorsdottr");
+		prc.put("6", gen);
+		
+		System.out.println(prc);
+	}
+	
+ }
+
+
+
+Output: 
+
+
+{1={Name=Daniel}, 2={Name=Xander}, 3={Name=Hades}, 4={Name=Xor}, 5={Name=Zues}, 6={Name=Thorsdottr}}
+
